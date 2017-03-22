@@ -37,7 +37,7 @@ public class Dictionary {
 	 * se mi serve seconda metà della lista:aggiorno indice iniziale 
 	 * se mi serve prima metà della lista tengo fermo indice i e invece scalo indice finale
 	 * algoritmo dicotomico prestazioni migliori vs contains che scorre tutta la lista !!
-	 *  OSS: scalare -1 e  +1 ad m necessari per far sì che i>f, per uscita dal ciclo    !!
+	 *  OSS: scalare -1  e  +1 ad m necessari per far sì che i>f, per uscita dal ciclo    !!
 	 * @param inputTextList
 	 * @return
 	 */
