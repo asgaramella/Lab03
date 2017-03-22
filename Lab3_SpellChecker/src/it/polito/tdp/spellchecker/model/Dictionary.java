@@ -30,9 +30,14 @@ public class Dictionary {
 	}
 	
 	/**
-	 * Per ogni parola della lista controllo se è presente,
-	 * se sì imposto boolean a true
-	 * se no impòosto boolean a false
+	 * Algorito della ricerca dicotomica: 
+	 * i(inidce inizio)
+	 * f(indice fine)
+	 * m(indidce medio)
+	 * se mi serve seconda metà della lista:aggiorno indice iniziale 
+	 * se mi serve prima metà della lista tengo fermo indice i e invece scalo indice finale
+	 * algoritmo dicotomico prestazioni migliori vs contains che scorre tutta la lista !!
+	 *  OSS: scalare -1 e +1 ad m necessari per far sì che i>f, per uscita dal ciclo    !!
 	 * @param inputTextList
 	 * @return
 	 */
@@ -64,11 +69,6 @@ public class Dictionary {
 				}
 			
 				m=(i+f)/2;
-				
-				if (i+1==f){
-					trovata=false;
-				}
-				
 			}
 		
 			
